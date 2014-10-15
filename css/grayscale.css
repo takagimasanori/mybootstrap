@@ -20,11 +20,18 @@ html {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    text-transform: uppercase;
+    text-transform: capitalize;/*uppercase*/
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h4 {
+    margin: 0 0 15px;
+    text-transform: capitalize;/*uppercase*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -159,6 +166,10 @@ a:focus {
     font-size: 18px;
 }
 
+.about-text .contact-text {
+    font-size: 14px
+}
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
@@ -171,6 +182,10 @@ a:focus {
 
     .intro .intro-body .intro-text {
         font-size: 25px;
+    }
+
+    .about-text .contact-text{
+        font-size: 16px
     }
 }
 
@@ -255,9 +270,10 @@ a:focus {
 .download-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+    color: #000;
+    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    */
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -360,4 +376,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.firsttd {
+    width: 25%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.lasttd {
+    width: 10%;
 }
