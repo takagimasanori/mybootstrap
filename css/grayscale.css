@@ -389,3 +389,11 @@ body {
 .lasttd {
     width: 10%;
 }
+
+iframe.twitter-share-button {
+width: 90px!important;
+}
+
+#___plusone_0 {
+width:65px !important;
+}
